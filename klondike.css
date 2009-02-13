@@ -8,15 +8,27 @@ body {
   border: 1px solid #999;
   margin: 0 auto;
   width: 700px;
-  height: 500px;
+  height: 600px;
   position: relative;
 }
-.card {
-  background-color: #fff;
+#stock,
+.red,
+.black,
+.downturned,
+.foundation {
   border: 2px solid #999;
+}
+#stock,
+#waste,
+.red,
+.black,
+.downturned,
+.foundation,
+.tableau-pile,
+.container {
   position: absolute;
-  width: 50px;
   height: 80px;
+  width: 50px;
 }
 .left {
   float: left;
@@ -43,6 +55,7 @@ body {
   background-color: #fff;
   cursor: pointer;
 }
+.highlighted,
 .highlighted .red,
 .highlighted .black {
   background-color: yellow;
@@ -54,9 +67,14 @@ body {
   color: black;
 }
 .container {
-  position: absolute;
   top: 0;
   left: 0;
-  height: 80px;
-  width: 50px;
+}
+#stock {
+  top: 25px;
+  left: 100px;
+}
+#waste {
+  top: 25px;
+  left: 170px;
 }
